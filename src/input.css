@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-track {
+    display: flex;
+    gap: 10px;
+  }
+  
+.slider_item {
+    background-image: url(../src/img/hero_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .slider__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+.slider {
+    position: relative;
+  
+}
+  
+.slick-arrow {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 10000;
+    background-color: transparent;
+    
+}
+  
+  .slick-next {
+    position: absolute;
+    right: 40px;
+    top: 45%;
+    transform: translateY(-50%);
+    background-image: url(./img/slider_right.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .slick-prev {
+    position: absolute;
+    z-index: 10000;
+    left: 40px;
+    top: 45%;
+    transform: translateY(-50%);
+    background-image: url(./img/slider_left.svg);
+    background-repeat: no-repeat;
+  
+  }
+  
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+    
+  }
+  
+  .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    display: block;
+    border: 1px solid black;
+    transform: rotate(45deg);
+  }
+  
+  .slick-dots .slick-active button {
+    background-color: red;
+  }
+
+
+  .seller__content_block {
+    position: relative;
+    height: 267px;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-bottom: 9px;
+    overflow: hidden;
+  }
+  
+  .seller__buttons {
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+  }
+  
+  .seller__buttons_wrapper {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* .seller__like_btn {
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-image: url("./img/like_icon.svg");
+  }
+  .seller__like_btn:nth-child(2) {
+    background-image: url("./img/buy_icon.svg");
+  } */
+  
+  .seller_product_item:hover .seller__buttons {
+    transform: translateY(0);
+  }

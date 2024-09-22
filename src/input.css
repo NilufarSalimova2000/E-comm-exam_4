@@ -8,10 +8,33 @@
   }
   
 .slider_item {
-    background-image: url(../src/img/hero_img.png);
+    background-image: url("../src/img/hero_img.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
+}
+
+.slider_item2 {
+  background-image: url("https://olcha.uz/image/original/sliders/ru/cdn_1/2024-09-16/6Xb1Rezh5jpkkz2uEMdq8TFgp4USJtXBNTPn6zHwI82mU4AZqhGjVT23GVYk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider_item3 {
+  background-image: url("https://olcha.uz/image/original/sliders/ru/cdn_1/2024-07-24/R5JK0vbdyQzxhMu5MpRcxMOAzEb2NAhbJDOYZcdNlJzSyIfp8eKQZjIrtXYM.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider_item4 {
+  background-image: url("https://olcha.uz/image/original/sliders/ru/cdn_1/2024-08-01/nmTGSvySh6B9NkfkIVnzn6edwuP4jf6n63DuRiCO6j4NIgdJk75uWcFGk6QN.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider_item5 {
+  background-image: url("https://olcha.uz/image/original/sliders/ru/cdn_1/2024-09-16/dTfGdavUMsdyZ1qDcx8FhZQR3hfJncCGKQsmufktysmorziuaGj0B0QNa2gl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
   
   .slick-list {
@@ -111,16 +134,26 @@
     transform: translate(-50%, -50%);
   }
   
-  /* .seller__like_btn {
-    width: 52px;
-    height: 52px;
-    background-repeat: no-repeat;
-    background-image: url("./img/like_icon.svg");
-  }
-  .seller__like_btn:nth-child(2) {
-    background-image: url("./img/buy_icon.svg");
-  } */
-  
   .seller_product_item:hover .seller__buttons {
     transform: translateY(0);
   }
+
+.like {
+  color: #33a0ff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.like:hover {
+  color: red
+}
+
+.buy {
+  color: #33a0ff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.buy:hover {
+  color: red
+}

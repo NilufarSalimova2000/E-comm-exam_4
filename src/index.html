@@ -26,7 +26,7 @@
                             <img src="./img/header_user.svg" alt="icon">
                             <a class="font-normal text-[20px] text-[#262626]block" href="#">My profile</a>
                         </div>
-                        <a class="block flex items-center relative" href="./cart.html">
+                        <a class="block flex items-center relative" href="#">
                             <img src="./img/header_cart.svg" alt="icon">
                             <span class="product_count w-[20px] h-[20px] rounded-[50%] bg-[#FB7181] font-bold text-[12px] text-[#fff] flex items-center justify-center absolute bottom-[12px] left-[10px]">0</span>
                         </a>
@@ -76,15 +76,13 @@
                         <h2 class="font-bold text-[64px] text-[#fff] leading-[150%] tracking-[0.01em] w-[573px]">Super Flash Sale 50% Off</h2>
                     </div>
                 </div>
-                <div class="slider_item pt-[259px] pb-[167px]">
-                    <div class="container">
-                        <h2 class="font-bold text-[64px] text-[#fff] leading-[150%] tracking-[0.01em] w-[573px]">Super Flash Sale 50% Off</h2>
-                    </div>
+                <div class="slider_item2 pt-[259px] pb-[167px]">
                 </div>
-                <div class="slider_item pt-[259px] pb-[167px]">
-                    <div class="container">
-                        <h2 class="font-bold text-[64px] text-[#fff] leading-[150%] tracking-[0.01em] w-[573px]">Super Flash Sale 50% Off</h2>
-                    </div>
+                <div class="slider_item3 pt-[259px] pb-[167px]">
+                </div>
+                <div class="slider_item4 pt-[259px] pb-[167px]">
+                </div>
+                <div class="slider_item5 pt-[259px] pb-[167px]">
                 </div>
             </div>
             <div class="container">
@@ -129,18 +127,106 @@
         <section class="pt-[360px] pb-[116px]">
             <div class="container">
                 <h2 class="font-bold text-[35px] text-[#22262a] text-center mb-[26px]">BEST SELLER</h2>
-                <div class="tab_list flex gap-[20px] justify-center mb-[24px]"></div>
-                <ul class="products_list grid grid-cols-4 gap-y-[30px]"></ul>
+                <div class="tab_list flex gap-[30px] justify-center mb-[24px]"></div>
+                <ul class="products_list grid grid-cols-4 gap-y-[30px] mb-[37px]"></ul>
+                
+                <button class="open_modal font-medium text-[20px] text-[#33a0ff] mx-auto block border-b border-b-[3px] border-b-[#33a0ff]">View cart</button>
+                <div class="modal fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+                    <div class="modal_content w-4/5 h-5/6 overflow-y-auto bg-[#fff] shadow-lg rounded-[20px] px-[30px] py-[20px]">
+                        <div class="flex justify-end"><button class="close_modal text-bold text-[28px] text-[#000] hover:text-red-500">x</button></div>
+                        <div class="add_cart">
+                            <div class="flex justify-between py-[23px] border-b border-b-[3px] border-b-[#f6f7f8]">
+                                <p class="font-medium text-[#22262a] text-[20px] ml-[60px]">PRODUCT</p>
+                                <p class="font-medium text-[#22262a] text-[20px] mr-[40px]">PRICE</p>
+                            </div>
+                            <div class="cart_block mb-[20px]"></div>
+                            <div class="flex justify-end gap-[50px] mr-[40px]">
+                                <p class="font-medium text-[30px] text-[#22262a]">TOTAL</p>
+                                <p class="total_price font-medium text-[30px] text-[#22262a]">$ 0</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section class="pb-[51px]">
             <div class="container">
-                <div class="cart_block"></div>
-                <p class="total_price">0</p>
+                <ul class="flex gap-[258px] justify-center mb-[136px]">
+                    <li class="text-center">
+                        <div class="flex justify-center">
+                            <img class="mb-[54px]" src="./img/service_icon1.svg" alt="icon">
+                        </div>
+                        <h3 class="font-medium text-[27px] text-[#22262a]">FREE SHIPPING</h3>
+                    </li>
+                    <li class="text-center">
+                        <div class="flex justify-center">
+                            <img class="mb-[40px]" src="./img/service_icon2.svg" alt="icon">
+                        </div>
+                        <h3 class="font-medium text-[27px] text-[#22262a]">100% REFUND</h3>
+                    </li>
+                    <li class="text-center">
+                        <div class="flex justify-center">
+                            <img class="mb-[35px]" src="./img/service_icon3.svg" alt="icon">
+                        </div>
+                        <h3 class="font-medium text-[27px] text-[#22262a]">SUPPORT 24/7</h3>
+                    </li>
+                </ul>
+                <form class="flex justify-center">
+                    <input class="w-[508px] border border-[2px] border-[#bcddfe] outline-[#40bfff] px-[21px] py-[22px] placeholder:text-[18px] placeholder:font-normal placeholder:text-[#B3B3B3]" type="text" placeholder="Search query..." name="input" id="input" aria-label="Search query">
+                    <button class="bg-[#40bfff] py-[17px] px-[28px] border-none font-semibold text-[20px] text-[#fff]">Search</button>
+                </form>
             </div>
         </section>
     </main>
+
+    <footer class="pt-[150px] pb-[54px] bg-[#bcddfe]">
+        <div class="container">
+            <div class="flex justify-between mb-[295px]">
+                <div>
+                    <a class="mb-[16px] block" href="#">
+                        <img src="./img/header_logo.svg" alt="logo">
+                    </a>
+                    <p class="w-[221px] font-normal text-[12px] text-[#22262a]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+                </div>
+                <div>
+                    <a class="block font-medium text-[18px] text-[#22262a] mb-[19px]" href="#">Follow Us</a>
+                    <p class="w-[198px] font-normal text-[12px] text-[#22262a] mb-[23px]">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    <div class="flex gap-[39px] items-center">
+                        <a class="block" href="#">
+                            <img src="./img/facebook.svg" alt="icon">
+                        </a>
+                        <a class="block" href="#">
+                            <img src="./img/twitter.svg" alt="icon">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div>
+                    <a class="block font-medium text-[18px] text-[#22262a] mb-[19px]" href="#">Contact Us</a>
+                <p class="w-[148px] font-normal text-[12px] text-[#22262a] mb-[23px]">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>  
+                </div>
+            </div>
+            <div class="pt-[30px] border-t border-t-[2px] border-t-[#f6f7f8] flex justify-between items-center">
+                <p class="font-normal text-[14px] text-[#c1c8ce]">© 2018 Ecommerce theme by www.bisenbaev.com</p>
+                <div class="flex gap-[20px]">
+                    <a href="#">
+                        <img src="./img/Western-union.png" alt="img">
+                    </a>
+                    <a href="#">
+                        <img src="./img/master-card.png" alt="img">
+                    </a>
+                    <a href="#">
+                        <img src="./img/Paypal.png" alt="img">
+                    </a>
+                    <a href="#">
+                        <img src="./img/master-card.png" alt="img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script type="module" src="./js/main.js"></script>
